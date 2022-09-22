@@ -29,16 +29,20 @@
 (defn plus-120 [date-str]
   (add-days date-str 120))
 
-
 (comment
   *e
   (parse-date "2017-08-23")
 
   (bean (parse-date "2017-08-23"))
 
-  (plus-60 "2022-10-20")
+  (-> "2022-09-12"
+      plus-60
+      str)
+  
+  (-> "2022-09-12"
+      plus-120
+      str)
 
-  (plus-120 "2022-10-20")
 
   ;;
   )
