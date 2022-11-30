@@ -29,20 +29,31 @@
 (defn plus-120 [date-str]
   (add-days date-str 120))
 
+(defn plus-360 [data-str]
+  (add-days data-str 360))
+
 (comment
+  ;; High   60
+  ;; Medium 120
+  ;; Low    360
   *e
   (parse-date "2017-08-23")
 
   (bean (parse-date "2017-08-23"))
 
+  (now)
+  
   (-> "2022-09-12"
       plus-60
       str)
-  
+
   (-> "2022-09-12"
       plus-120
       str)
 
+  (-> "2022-11-16"
+      plus-360
+      str)
 
   ;;
   )
